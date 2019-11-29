@@ -1,0 +1,62 @@
+{
+  "_version": "1.8.0",
+  "sap.app": {
+    "id": "student",
+    "type": "application",
+    "title": "Students Details",
+    "description": "studentsDetails",
+    "dataSources": {
+      "mysrvdemo": {
+        "uri": "/mysrvdemo/",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "4.0"
+        }
+      }
+    }
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "libs": {
+        "sap.fe": {}
+      }
+    },
+    "models": {
+      "": {
+        "dataSource": "mysrvdemo",
+        "settings": {
+          "synchronizationMode": "None",
+          "operationMode": "Server",
+          "autoExpandSelect": false,
+          "earlyRequests": false,
+          "groupProperties": {
+            "default": {
+              "submit": "Auto"
+            }
+          }
+        }
+      }
+    },
+    "routing": {
+      "routes": [
+        {
+          "pattern": ":?query:",
+          "name": "Student",
+          "target": "Student"
+        }
+      ],
+      "targets": {
+        "Student": {
+          "type": "Component",
+          "id": "Student",
+          "name": "sap.fe.templates.ListReport",
+          "options": {
+            "settings": {
+              "entitySet": "StudentsSRV"
+            }
+          }
+        }
+      }
+    }
+  }
+}

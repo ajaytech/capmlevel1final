@@ -1,0 +1,14 @@
+{
+  "build": {
+    "target": "gen",
+    "tasks": [
+      {
+        "src": "db",
+        "for": "hana",
+        "options": {
+          "model": ["db", "srv"]
+        }
+      }
+    ]
+  }
+}
