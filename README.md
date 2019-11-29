@@ -7,9 +7,7 @@ git clone https://github.com/ajaytech/capmlevel1final.git
 
 ### Step 2: If you don't have CAPM CDS install run below two commands
 
-For this step NPM need to be present in your system
-
-Add Registery of SAP® NPM
+For this step NPM need to be present in your system, now Add Registery of SAP® NPM
 
 ```sh
 npm set @sap:registry=https://npm.sap.com
@@ -35,7 +33,8 @@ npm install
 npm i sqlite
 ```
 
-###Step 5: Run App with locally
+### Step 5: Run App with locally
+
 Run in root of the project
 
 ```sh
