@@ -1,6 +1,9 @@
 # CAPM Level1 Final Code part of Learn SAP® Cloud Professional Development End-to-End
 
 ### Step 1: Pull the Repo
+```sh
+git clone https://github.com/ajaytech/capmlevel1final.git
+```
 
 ### Step 2: If you don't have CAPM CDS install run below two commands
 
