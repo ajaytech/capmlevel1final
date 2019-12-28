@@ -11,4 +11,8 @@ RUN npm install
 # Bundle app source
 COPY . .
 EXPOSE 8080
-CMD [ "cds", "run" ]
+
+ADD start.sh /
+RUN chmod +x /start.sh
+CMD ["/start.sh"]
+
