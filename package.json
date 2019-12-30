@@ -15,7 +15,7 @@
   "scripts": {
     "build": "cds build/all --clean",
     "deploy": "cds deploy",
-    "start": "cds run"
+    "start": "cds run --in-memory"
   },
   "cds": {
     "requires": {
