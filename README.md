@@ -43,4 +43,12 @@ Run in the root of the project
 ```sh
 cds run
 ```
+or to run it in memory basis.
+
+```sh
+cds run --in-memory
+```
+
+
+
 
